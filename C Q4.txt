@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float avg, totalFuel, totalCost;
+
+    printf("Enter car's fuel average (km/liter): ");
+    scanf("%f", &avg);
+
+    totalFuel = 2414 / avg; // 2414 km (round trip)
+    totalCost = (118 + 123) * totalFuel / 2;
+
+    printf("Total fuel consumed: %.2f liters\n", totalFuel);
+    printf("Total fuel cost: %.2f\n", totalCost);
+
+    return 0;
+}
